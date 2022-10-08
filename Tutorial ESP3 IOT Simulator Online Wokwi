@@ -1,0 +1,26 @@
+Ardiuno Uno "Hello work"
+/*Hello Wokwil*/
+#include <LiquidCrystal_I2c.h>
+LiquidCrystal_12C lcd (0*27, 20, 4);
+
+Void setup(){
+lcd.int();
+lcd.backlight();
+lcd.setcursor(1, 0);
+lcd.print ("Hello Wokwil");
+}
+Void Loop();
+lcd.setcursor(3, 1);
+lcd.print(Millie()/1000);
+}
+Blink LED on ESP32
+#define LED2
+void setup(){
+   PoinMode(LED, OUTPUT);
+}
+Void Loop(){
+digitalWrite (LED, HIGH);
+delay(300);
+digitalWrite(LED, low);
+delay(500);
+}
